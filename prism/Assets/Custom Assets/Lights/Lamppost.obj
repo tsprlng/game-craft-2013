@@ -55,6 +55,7 @@ v -0.068717 20.100285 -1.801702
 v -0.071589 20.100285 -1.246888
 v 0.054167 20.065849 -1.284981
 v 0.179924 20.100285 -1.246888
+g Cylinder_Cylinder_Material
 usemtl Material
 s off
 f 39 38 33 46
@@ -69,6 +70,7 @@ f 41 42 49 48
 f 45 39 46 53
 f 42 45 53 49
 f 44 43 50 51
+g Cylinder_Cylinder_Material.001
 usemtl Material.001
 f 1 2 4 3
 f 3 4 6 5

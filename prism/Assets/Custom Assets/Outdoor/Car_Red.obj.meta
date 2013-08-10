@@ -5,11 +5,31 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: default
+    100004: Car_Cube.001_Material
+    100006: Car_Cube.001_Material.001
+    100008: Car_Cube.001_Material.002
+    100010: Car_Cube.001_Material.003
     400000: //RootNode
     400002: default
+    400004: Car_Cube.001_Material
+    400006: Car_Cube.001_Material.001
+    400008: Car_Cube.001_Material.002
+    400010: Car_Cube.001_Material.003
     2300000: default
+    2300002: Car_Cube.001_Material
+    2300004: Car_Cube.001_Material.001
+    2300006: Car_Cube.001_Material.002
+    2300008: Car_Cube.001_Material.003
     3300000: default
+    3300002: Car_Cube.001_Material
+    3300004: Car_Cube.001_Material.001
+    3300006: Car_Cube.001_Material.002
+    3300008: Car_Cube.001_Material.003
     4300000: default
+    4300002: Car_Cube.001_Material
+    4300004: Car_Cube.001_Material.001
+    4300006: Car_Cube.001_Material.002
+    4300008: Car_Cube.001_Material.003
     9500000: //RootNode
   materials:
     importMaterials: 1

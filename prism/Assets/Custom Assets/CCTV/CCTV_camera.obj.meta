@@ -5,11 +5,21 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: default
+    100004: Camera_Cube.001_Material
+    100006: Camera_Cube.001_Material.001
     400000: //RootNode
     400002: default
+    400004: Camera_Cube.001_Material
+    400006: Camera_Cube.001_Material.001
     2300000: default
+    2300002: Camera_Cube.001_Material
+    2300004: Camera_Cube.001_Material.001
     3300000: default
+    3300002: Camera_Cube.001_Material
+    3300004: Camera_Cube.001_Material.001
     4300000: default
+    4300002: Camera_Cube.001_Material
+    4300004: Camera_Cube.001_Material.001
     9500000: //RootNode
   materials:
     importMaterials: 1

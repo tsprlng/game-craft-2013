@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: default
+    100004: Bookshelf_Cube.001_Material
     400000: //RootNode
     400002: default
+    400004: Bookshelf_Cube.001_Material
     2300000: default
+    2300002: Bookshelf_Cube.001_Material
     3300000: default
+    3300002: Bookshelf_Cube.001_Material
     4300000: default
+    4300002: Bookshelf_Cube.001_Material
     9500000: //RootNode
   materials:
     importMaterials: 1

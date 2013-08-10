@@ -5,11 +5,31 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: default
+    100004: Computer_Cube.002_Material.004
+    100006: Keyboard_Cube.004_Material.003
+    100008: Monitor_Cube.003_Material
+    100010: Monitor_Cube.003_Material.001
     400000: //RootNode
     400002: default
+    400004: Computer_Cube.002_Material.004
+    400006: Keyboard_Cube.004_Material.003
+    400008: Monitor_Cube.003_Material
+    400010: Monitor_Cube.003_Material.001
     2300000: default
+    2300002: Computer_Cube.002_Material.004
+    2300004: Keyboard_Cube.004_Material.003
+    2300006: Monitor_Cube.003_Material
+    2300008: Monitor_Cube.003_Material.001
     3300000: default
+    3300002: Computer_Cube.002_Material.004
+    3300004: Keyboard_Cube.004_Material.003
+    3300006: Monitor_Cube.003_Material
+    3300008: Monitor_Cube.003_Material.001
     4300000: default
+    4300002: Computer_Cube.002_Material.004
+    4300004: Keyboard_Cube.004_Material.003
+    4300006: Monitor_Cube.003_Material
+    4300008: Monitor_Cube.003_Material.001
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -5,11 +5,26 @@ ModelImporter:
   fileIDToRecycleName:
     100000: default
     100002: //RootNode
+    100004: Seeker_Sphere_Material
+    100006: Seeker_Sphere_Material.001
+    100008: Seeker_Sphere_Material.002
     400000: default
     400002: //RootNode
+    400004: Seeker_Sphere_Material
+    400006: Seeker_Sphere_Material.001
+    400008: Seeker_Sphere_Material.002
     2300000: default
+    2300002: Seeker_Sphere_Material
+    2300004: Seeker_Sphere_Material.001
+    2300006: Seeker_Sphere_Material.002
     3300000: default
+    3300002: Seeker_Sphere_Material
+    3300004: Seeker_Sphere_Material.001
+    3300006: Seeker_Sphere_Material.002
     4300000: default
+    4300002: Seeker_Sphere_Material
+    4300004: Seeker_Sphere_Material.001
+    4300006: Seeker_Sphere_Material.002
     9500000: //RootNode
   materials:
     importMaterials: 1
