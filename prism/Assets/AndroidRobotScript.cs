@@ -111,7 +111,12 @@ public class AndroidRobotScript : MonoBehaviour {
 			}
 	}
 
-	
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.tag == "Bullet") {
+			Destroy(gameObject);
+		}
+	}
 	
 	
 }
