@@ -18,6 +18,10 @@ public class AndroidRobotScript : MonoBehaviour {
 	public float fireRate;
 	public float nextFire;
 	
+	public AudioClip alertSound;
+	public AudioClip gunSound;
+	
+	
 	/// <summary>
 	/// Gets/Sets the IsAlive Property. Can set, but it is advised to call TakeDamage()
 	/// </summary>
@@ -56,13 +60,16 @@ public class AndroidRobotScript : MonoBehaviour {
 		bulletSpeed = 15f;
 		fireRate = 1f;
 		nextFire = -1.0f;
-		
+		audio.PlayOneShot(alertSound);
  
 	}
 	
 	// Update is called once per frame
 	private void Update () 
 	{
+		
+		
+		
 		Debug.DrawLine(target.position, myTransform.position);
 		
 		float distance = Vector3.Distance(transform.position, target.position);
@@ -81,6 +88,7 @@ public class AndroidRobotScript : MonoBehaviour {
 			{
 				nextFire = Time.time + fireRate;
 				var clone = Instantiate(projectile, myTransform.position, myTransform.rotation);
+				audio.PlayOneShot(gunSound);
 				
 			}
 		}
@@ -103,7 +111,12 @@ public class AndroidRobotScript : MonoBehaviour {
 			}
 	}
 
-	
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.tag == "Bullet") {
+			Destroy(gameObject);
+		}
+	}
 	
 	
 }
