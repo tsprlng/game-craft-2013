@@ -10,9 +10,29 @@ public class SeekerRobot : MonoBehaviour
 	private float minFollowRange = 2f;
 	private float maxFollowRange = 100f;
     private bool follow = false;
-	private bool isAlive = true;
 	private float rotationSpeed = 10;
 	private float movementSpeed = 2;
+	private bool isAlive = true;
+	
+	/// <summary>
+	/// Gets/Sets the IsAlive Property. Can set, but it is advised to call TakeDamage()
+	/// </summary>
+	/// <value>
+	/// <c>true</c> if this AI is alive; otherwise, <c>false</c>.
+	/// </value>
+	public bool IsAlive {
+		get
+		{
+			return isAlive;
+		}
+		set
+		{
+			if (value != isAlive) 
+			{
+				isAlive = value;
+			}
+		}
+	}
 	
     void Awake() 
 	{
@@ -46,5 +66,10 @@ public class SeekerRobot : MonoBehaviour
    			myTransform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
 		}
 		
+	}
+	
+	public void TakeDamage()
+	{
+		IsAlive = false;
 	}
 }

@@ -11,26 +11,57 @@ public class AndroidRobotScript : MonoBehaviour {
 	private float attackDelay = 1;
 	private float rotationSpeed = 10;
     private float movementSpeed = 2;
+	private bool isAlive = true;
+	
+	public float bulletSpeed;
+	public GameObject projectile;
+	public float fireRate;
+	public float nextFire;
+	
+	/// <summary>
+	/// Gets/Sets the IsAlive Property. Can set, but it is advised to call TakeDamage()
+	/// </summary>
+	/// <value>
+	/// <c>true</c> if this AI is alive; otherwise, <c>false</c>.
+	/// </value>
+	public bool IsAlive {
+		get
+		{
+			return isAlive;
+		}
+		set
+		{
+			if (value != isAlive) 
+			{
+				isAlive = value;
+			}
+		}
+	}
 
 	
 
 	
-	void Awake() 
+	private void Awake() 
 	{
     	myTransform = transform;
 	}
 	
 	// Use this for initialization
-	void Start () 
+	private void Start () 
 	{
 		GameObject go = GameObject.FindGameObjectWithTag("Player");
  
     	target = go.transform;
+		
+		bulletSpeed = 15f;
+		fireRate = 0.4f;
+		nextFire = -1.0f;
+		
  
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	private void Update () 
 	{
 		Debug.DrawLine(target.position, myTransform.position);
 		
@@ -43,7 +74,25 @@ public class AndroidRobotScript : MonoBehaviour {
       		transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
 		}
 		
+		if (distance < maxFollowRange) {
+			if (Time.time > nextFire) 
+			{
+				nextFire = Time.time + fireRate;
+				var clone = Instantiate(projectile, myTransform.position, myTransform.rotation);
+			}
+		}
+		
 		// LASER ATTACK HERE
 		
 	}
+	
+	public void TakeDamage()
+	{
+		IsAlive = false;
+	}
+	
+
+	
+	
+	
 }
