@@ -7,13 +7,10 @@ public class AndroidRobotScript : MonoBehaviour {
 	private Transform target;
 	public float minFollowRange = 5f;
 	public float maxFollowRange = 30f;
-	private float attackRange = 3;
-	private float attackDelay = 1;
 	private float rotationSpeed = 10;
     public float movementSpeed = 2;
 	private bool isAlive = true;
 	
-	public float bulletSpeed;
 	public GameObject projectile;
 	public float fireRate;
 	public float nextFire;
@@ -57,7 +54,6 @@ public class AndroidRobotScript : MonoBehaviour {
  
     	target = go.transform;
 		
-		bulletSpeed = 15f;
 		fireRate = 1f;
 		nextFire = -1.0f;
 		audio.PlayOneShot(alertSound);
