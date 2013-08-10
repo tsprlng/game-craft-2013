@@ -67,8 +67,9 @@ public class SeekerRobot : MonoBehaviour
    			myTransform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
 		}
 		
-		if (distance < 2) {
+		if (distance < 1) {
 			hasKilledPlayer = true;
+			Application.LoadLevel(Application.loadedLevel);
 			Debug.Log("Seeker killed player");
 		}
 		
