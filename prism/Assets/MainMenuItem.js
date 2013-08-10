@@ -1,9 +1,10 @@
-﻿#pragma strict
-var levelName : String;
+﻿var levelName : String;
 var quitOnClick : boolean;
+var mouseOverClip : AudioClip;
 
 function OnMouseEnter() {
 	renderer.material.color = Color.yellow;
+	audio.PlayOneShot(mouseOverClip);
 }
 
 function OnMouseExit() {
