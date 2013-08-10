@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour {
 	public float movementSpeed = 10f;
 	
 	public GameObject projectile;
+	public GameObject camera;
 	public float fireRate;
 	public float nextFire;
 	
@@ -32,6 +33,7 @@ public class PlayerScript : MonoBehaviour {
 			myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(Vector3.left), rotationSpeed * Time.deltaTime);
 			//transform.Rotate(Vector3.left);
 			transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
+			camera.transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
 			//myTransform.position.x = 1f;
 			
 		}
@@ -42,6 +44,8 @@ public class PlayerScript : MonoBehaviour {
 			myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(Vector3.right), rotationSpeed * Time.deltaTime);
 			//transform.Rotate(Vector3.left);
 			transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
+			camera.transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
+
 			//myTransform.position.x = 1f;
 		}
 		
@@ -49,6 +53,8 @@ public class PlayerScript : MonoBehaviour {
 		{
 			FireGun();
 		}
+		
+		//camera.transform.position.Set(myTransform.position.x + 2, myTransform.position.y, myTransform.position.z+10);
 		
 	}
 	
@@ -59,7 +65,7 @@ public class PlayerScript : MonoBehaviour {
 			{
 				nextFire = Time.time + fireRate;
 				Vector3 pos = myTransform.position;
-				pos.y += 10f;
+				pos.y += 1.6f;
 				var clone = Instantiate(projectile, pos, myTransform.rotation);
 				audio.PlayOneShot(gunSound);
 			}

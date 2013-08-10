@@ -9,8 +9,13 @@ public class Bullet : MonoBehaviour {
 	public string bulletOwner;
 	private Transform target;
 	public bool hasHitTarget;
-	private GameObject go = new GameObject();
+	private GameObject go;
 	private GameObject[] go2;
+	
+	void Awake()
+	{
+		go = new GameObject();
+	}
 	
 	// Use this for initialization
 	void Start () 
