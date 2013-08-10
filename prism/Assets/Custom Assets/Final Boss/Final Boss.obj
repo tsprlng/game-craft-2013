@@ -1,6 +1,6 @@
 # Blender v2.68 (sub 0) OBJ File: 'Final Boss.blend'
 # www.blender.org
-mtllib Boss.mtl
+mtllib Final Boss.mtl
 o Sphere
 v 5.475461 11.149528 -0.504585
 v 5.537006 11.149528 0.901702
