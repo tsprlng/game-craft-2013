@@ -54,7 +54,7 @@ public class AndroidRobotScript : MonoBehaviour {
     	target = go.transform;
 		
 		bulletSpeed = 15f;
-		fireRate = 0.4f;
+		fireRate = 1f;
 		nextFire = -1.0f;
 		
  
@@ -75,10 +75,13 @@ public class AndroidRobotScript : MonoBehaviour {
 		}
 		
 		if (distance < maxFollowRange) {
+			
+			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 			if (Time.time > nextFire) 
 			{
 				nextFire = Time.time + fireRate;
 				var clone = Instantiate(projectile, myTransform.position, myTransform.rotation);
+				
 			}
 		}
 		
@@ -91,6 +94,14 @@ public class AndroidRobotScript : MonoBehaviour {
 		IsAlive = false;
 	}
 	
+	public void FireGun()
+	{
+			if (Time.time > nextFire) 
+			{
+				nextFire = Time.time + fireRate;
+				var clone = Instantiate(projectile, myTransform.position, myTransform.rotation);
+			}
+	}
 
 	
 	

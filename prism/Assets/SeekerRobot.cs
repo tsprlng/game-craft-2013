@@ -11,8 +11,9 @@ public class SeekerRobot : MonoBehaviour
 	private float maxFollowRange = 100f;
     private bool follow = false;
 	private float rotationSpeed = 10;
-	private float movementSpeed = 2;
+	private float movementSpeed = 5;
 	private bool isAlive = true;
+	public bool hasKilledPlayer;
 	
 	/// <summary>
 	/// Gets/Sets the IsAlive Property. Can set, but it is advised to call TakeDamage()
@@ -64,6 +65,11 @@ public class SeekerRobot : MonoBehaviour
 			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
    			//transform.LookAt(target);
    			myTransform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
+		}
+		
+		if (distance < 2) {
+			hasKilledPlayer = true;
+			Debug.Log("Seeker killed player");
 		}
 		
 	}
