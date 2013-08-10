@@ -1,7 +1,7 @@
 # Blender v2.68 (sub 0) OBJ File: 'Bookshelf.blend'
 # www.blender.org
 mtllib Bookshelf.mtl
-o Cube_Cube.001
+o Bookshelf_Cube.001
 v -8.533240 -0.039775 1.000000
 v -8.533240 -0.039775 -1.000000
 v 8.533240 -0.039775 -1.000000
@@ -218,7 +218,8 @@ v -0.153914 2.107032 -0.865163
 v -0.153914 2.336804 -0.865163
 v -8.185104 2.107032 -0.865163
 v -8.185104 2.336804 -0.865163
-usemtl None
+g Bookshelf_Cube.001_Material
+usemtl Material
 s off
 f 31 30 2 1
 f 72 42 3 13

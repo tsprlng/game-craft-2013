@@ -5,11 +5,26 @@ ModelImporter:
   fileIDToRecycleName:
     100000: default
     100002: //RootNode
+    100004: Turret_gun_Cylinder.002_Material
+    100006: Turret_gun_Cylinder.002_Material.001
+    100008: Turret_gun_Cylinder.002_Material.002
     400000: default
     400002: //RootNode
+    400004: Turret_gun_Cylinder.002_Material
+    400006: Turret_gun_Cylinder.002_Material.001
+    400008: Turret_gun_Cylinder.002_Material.002
     2300000: default
+    2300002: Turret_gun_Cylinder.002_Material
+    2300004: Turret_gun_Cylinder.002_Material.001
+    2300006: Turret_gun_Cylinder.002_Material.002
     3300000: default
+    3300002: Turret_gun_Cylinder.002_Material
+    3300004: Turret_gun_Cylinder.002_Material.001
+    3300006: Turret_gun_Cylinder.002_Material.002
     4300000: default
+    4300002: Turret_gun_Cylinder.002_Material
+    4300004: Turret_gun_Cylinder.002_Material.001
+    4300006: Turret_gun_Cylinder.002_Material.002
     9500000: //RootNode
   materials:
     importMaterials: 1

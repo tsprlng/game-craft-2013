@@ -1,10 +1,11 @@
 # Blender MTL File: 'Dumpster.blend'
 # Material Count: 1
 
-newmtl None
-Ns 0
+newmtl Material
+Ns 96.078431
 Ka 0.000000 0.000000 0.000000
-Kd 0.8 0.8 0.8
-Ks 0.8 0.8 0.8
-d 1
+Kd 0.013787 0.077477 0.004768
+Ks 0.009483 0.023481 0.010162
+Ni 1.000000
+d 1.000000
 illum 2
