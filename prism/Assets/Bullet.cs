@@ -62,7 +62,7 @@ public class Bullet : MonoBehaviour {
 		else
 		{
 			distance = Vector3.Distance(transform.position, target.position);
-			if (distance <= 1) {
+			if (distance <= 2) {
 				Destroy(gameObject);
 				hasHitTarget = true;
 				

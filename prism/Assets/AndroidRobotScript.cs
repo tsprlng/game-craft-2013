@@ -5,12 +5,12 @@ public class AndroidRobotScript : MonoBehaviour {
 	
 	private Transform myTransform;
 	private Transform target;
-	private float minFollowRange = 5f;
-	private float maxFollowRange = 100f;
+	public float minFollowRange = 5f;
+	public float maxFollowRange = 30f;
 	private float attackRange = 3;
 	private float attackDelay = 1;
 	private float rotationSpeed = 10;
-    private float movementSpeed = 2;
+    public float movementSpeed = 2;
 	private bool isAlive = true;
 	
 	public float bulletSpeed;
@@ -87,7 +87,9 @@ public class AndroidRobotScript : MonoBehaviour {
 			if (Time.time > nextFire) 
 			{
 				nextFire = Time.time + fireRate;
-				var clone = Instantiate(projectile, myTransform.position, myTransform.rotation);
+				Vector3 pos = myTransform.position;
+				pos.y += 1.5f;
+				var clone = Instantiate(projectile, pos, myTransform.rotation);
 				audio.PlayOneShot(gunSound);
 				
 			}
