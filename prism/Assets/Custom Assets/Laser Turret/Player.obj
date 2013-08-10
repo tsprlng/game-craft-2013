@@ -1,6 +1,6 @@
 # Blender v2.68 (sub 0) OBJ File: 'Turret_gun.blend'
 # www.blender.org
-mtllib Turret_gun.mtl
+mtllib Player.mtl
 o Turret_gun_Cylinder.002
 v 0.000000 1.176896 1.092340
 v 0.000000 1.176896 1.499274
